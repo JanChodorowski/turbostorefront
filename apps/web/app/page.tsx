@@ -2,6 +2,7 @@ import Image, { type ImageProps } from "next/image";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
 import { Button as Button2 } from "@repo/public-submodule/button";
+import { Button as Button3 } from "@repo/private-submodule/button";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -40,6 +41,7 @@ export default function Home() {
         </ol>
 
         <Button2>external button without tailwind set up </Button2>
+        <Button3>external button without tailwind set up </Button3>
         <div className={styles.ctas}>
           <a
             className={styles.primary}

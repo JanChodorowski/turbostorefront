@@ -54,6 +54,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/private-submodule':
+        specifier: workspace:*
+        version: link:../../packages/private-submodule
       '@repo/public-submodule':
         specifier: workspace:*
         version: link:../../packages/public-submodule
@@ -124,6 +127,30 @@ importers:
       typescript-eslint:
         specifier: ^8.15.0
         version: 8.15.0(eslint@9.15.0)(typescript@5.5.4)
+
+  packages/private-submodule:
+    dependencies:
+      '@radix-ui/react-slot':
+        specifier: ^1.1.1
+        version: 1.1.1(@types/react@18.3.1)(react@19.0.0)
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lucide-react:
+        specifier: ^0.473.0
+        version: 0.473.0(react@19.0.0)
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      tailwind-merge:
+        specifier: ^2.6.0
+        version: 2.6.0
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7
 
   packages/public-submodule:
     dependencies:
