@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { Button } from "@repo/ui/button";
+import { Button as Button2 } from "@repo/public-submodule/button";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -38,6 +39,7 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
+        <Button2>external button without tailwind set up </Button2>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
@@ -60,7 +62,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Read our docs
+            Read our docs !
           </a>
         </div>
         <Button appName="web" className={styles.secondary}>
