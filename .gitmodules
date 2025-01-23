@@ -1,3 +1,0 @@
-[submodule "packages/public-submodule"]
-	path = packages/public-submodule
-	url = https://github.com/JanChodorowski/public-submodule.git
